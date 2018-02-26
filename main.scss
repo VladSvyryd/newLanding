@@ -1,4 +1,23 @@
-h1{
-  display: flex;
-  color: #eee;
+html{
+  font-size: responsive !important;
+}
+
+
+.parallaxBild{
+  
+  background-image: url(../img/par.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn{
+  background-color: darkgray !important;
+}
+ 
+.formTop{
+  background-color: whitesmoke;
+ 
+  max-width: 800px;
+  max-height: 600px;
 }

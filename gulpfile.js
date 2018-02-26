@@ -1,13 +1,15 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    rucksack = require('rucksack-css');
 
 
     gulp.task('sass', function () {
 
     var plugins = [
-      autoprefixer('last 2 versions')
+      autoprefixer('last 2 versions'),
+      rucksack()
     ];
       return gulp.src('./*.scss')
         .pipe(postcss(plugins))
